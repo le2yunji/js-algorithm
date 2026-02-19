@@ -20,4 +20,9 @@ function solution(day, arr) {
 arr = [25, 23, 11, 47, 53, 17, 33];
 console.log(solution(3, arr));
 
-let answer = [];
+// 강의 정답
+// let answer = 0;
+// for (let x of arr) {
+//   if (x % 10 === day) answer++; // 어떤 숫자든지 10으로 나누면 그 수의 일의 자리수가 나머지가 됨.
+// }
+// return answer;
