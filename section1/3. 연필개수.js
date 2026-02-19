@@ -8,3 +8,11 @@ function solution(n) {
 }
 
 console.log(solution(120));
+
+// Math.floor -> 내림
+// Math.round -> 반올림
+// Math.ceil -> 올림
+
+// 내림 후 조건식으로 1을 더해주는 방식이 아니라 올림을 하면 한번에 해결 !!
+// let answer = Math.ceil(n / 12);
+// return answer;
