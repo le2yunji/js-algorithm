@@ -8,3 +8,13 @@ function solution(arr) {
 
 let arr = [5, 7, 1, 3, 2, 9, 11];
 console.log(solution(arr));
+
+//  강의 정답
+// let answer,
+//   min = Number.MAX_SAFE_INTEGER; // 큰 숫자로 미리 초기화해두기
+// min = arr[0]; // 혹은 배열의 첫 번째 숫자 넣어놓기
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] < min) min = arr[i]; // 큰 숫자를 넣어놨기 때문에 첫 번째 숫자는 무조건 들어가게 됨.
+// }
+// answer = min;
+// return answer;
