@@ -11,3 +11,18 @@ function solution(s) {
 }
 let str = ["teacher", "time", "student", "beautiful", "good"];
 console.log(solution(str));
+
+// 강의 정답
+// function solution(s) {
+//   let answer,
+//     max = Number.MIN_SAFE_INTEGER; // 가장 작은 숫자
+
+//   for (let x of s) {
+//     // x는 배열 안 각각의 단어
+//     if (x.length > max) {
+//       max = x.length;
+//       answer = x;
+//     }
+//   }
+//   return answer;
+// }
