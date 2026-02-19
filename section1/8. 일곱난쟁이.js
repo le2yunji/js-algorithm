@@ -21,14 +21,17 @@ console.log(solution(arr));
 // function solution(arr) {
 //   let answer = arr;
 //   let sum = arr.reduce((a, b) => a + b, 0); // a에 b를 누적, a는 0으로 초기화한다.
-
+//   let flag = 0;
 //   for (let i = 0; i < 8; i++) {
 //     for (let j = i + 1; j < 9; j++) {
 //       if (sum - (arr[i] + arr[j]) === 100) {
 //         arr.splice(j, 1);
 //         arr.splice(i, 1);
+//         flag = 1;  // 가능한 답의 경우가 2가지 이상일 경우 모두 빠지지 않도록 처음 쌍을 발견한 이후 for문을 벗어난다.
+//         break;
 //       }
 //     }
+//     if(flag === 1) break;
 //   }
 //   return answer;
 // }
