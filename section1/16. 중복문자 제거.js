@@ -10,19 +10,19 @@ function solution(s) {
 console.log(solution("ksekkset"));
 
 // 강의 정답
-function solution(s) {
-  let answer = "";
+// function solution(s) {
+//   let answer = "";
 
-  for (let i = 0; i < s.length; i++) {
-    // console.log(s[i], i, s.indexOf(s[i]));
-    if (s.indexOf(s[i]) === i) {
-      // 같을 때 = 첫 번째 발견할 때
-      answer += s[i];
-    }
-  }
+//   for (let i = 0; i < s.length; i++) {
+//     // console.log(s[i], i, s.indexOf(s[i]));
+//     if (s.indexOf(s[i]) === i) {
+//       // 같을 때 = 첫 번째 발견할 때
+//       answer += s[i];
+//     }
+//   }
 
-  return answer;
-}
+//   return answer;
+// }
 
 // 번외 - 중복되는 문자 개수 찾기
 // function solution(s) {
