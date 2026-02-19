@@ -9,3 +9,26 @@ function solution(s) {
 
 let str = "ItisTimeToStudy";
 console.log(solution(str));
+
+// 강의 정답 1
+function solution(s) {
+  let answer;
+  for (let x of s) {
+    if (x === x.toLowerCase()) answer += x.toUpperCase();
+    else answer += x;
+  }
+  return answer;
+}
+
+// 강의 정답 2 - 아스키 코드
+// 대문자 아스키 코드에서 32를 빼면 소문자 아스키코드가 됨 !!!
+// function solution(s) {
+//   let answer;
+//   for (let x of s) {
+//     let num = x.charCodeAt(); // 아스키 코드로 바꾸기
+//     if (num >= 97 && num <= 122)
+//       answer += String.fromCharCode(num - 32); // 다시 문자로 바꾸기
+//     else answer += x;
+//   }
+//   return answer;
+// }
