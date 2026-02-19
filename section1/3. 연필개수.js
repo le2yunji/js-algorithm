@@ -9,6 +9,7 @@ function solution(n) {
 
 console.log(solution(120));
 
+// 강의 정답
 // Math.floor -> 내림
 // Math.round -> 반올림
 // Math.ceil -> 올림

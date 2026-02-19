@@ -6,3 +6,11 @@ function solution(n) {
 }
 
 console.log(solution(20));
+
+// 강의 정답
+// 반복문을 통해 문제 해결
+// let answer = 0;
+// for (let i = 1; i <= n; i++) {
+//   answer += i;
+// }
+// return answer;
