@@ -12,3 +12,20 @@ function solution(s) {
 
 let str = "BANANA";
 console.log(solution(str));
+
+// // 강의 정답 1
+// function solution(s) {
+//   let answer = "";
+//   for (let x of s) {
+//     if (x === "A") answer += "#";
+//     else answer += x;
+//   }
+//   return answer;
+// }
+
+// // 강의 정답 2
+// function solution(s) {
+//   let answer = s; // 얕은 복사
+//   answer = answer.replace(/A/g, "#"); // g를 붙여주면 글로벌(전역)으로 바꾸라는 뜻.  s = s.replace(/A/, "#"); 는 처음 만난 A 하나만 바뀜.
+//   return answer;
+// }
