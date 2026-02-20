@@ -3,9 +3,18 @@
 // (앞에 서 있는 사람들보다 크면 보이고, 작거나 같으면 보이지 않습니다.)
 
 function solution(arr) {
-  let answer;
+  let answer = 1;
+  let tall = arr[0];
+
+  for (let x of arr) {
+    if (x > tall) {
+      answer++;
+      tall = x;
+    }
+  }
+
   return answer;
 }
 
 let arr = [130, 135, 148, 140, 145, 150, 150, 153];
-console.log(solution(arr));
+console.log(solution(arr)); // 5

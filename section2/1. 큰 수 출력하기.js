@@ -2,9 +2,15 @@
 // (첫 번째 수는 무조건 출력한다)
 
 function solution(arr) {
-  let answer;
+  let answer = "";
+  const N = arr.length;
+  for (let x of arr) {
+    if (x >= N) {
+      answer += x + " ";
+    }
+  }
   return answer;
 }
 
 let arr = [7, 3, 9, 5, 6, 12];
-console.log(solution(arr));
+console.log(solution(arr)); // 7 9 6 12
