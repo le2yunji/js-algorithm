@@ -38,6 +38,17 @@ console.log(solution(a, b));
 // B
 // D
 
-// 1 : 2 = 2
-// 1 : 3 = 1
-// 2 : 3 = 3
+// 강의 정답
+// function solution(a, b) {
+//   let answer = "";
+//   for (let i = 0; i < a.length; i++) {
+//     if (a[i] === b[i]) answer += "D"; // 비기면 D
+//     else if (a[i] === 1 && b[i] === 3) answer += "A" + " ";
+//     else if (a[i] === 1 && b[i] === 3) answer += "A" + " ";
+//     else if (a[i] === 1 && b[i] === 3) answer += "A" + " ";
+//     else answer += "B" + " "; // A가 이기는 순간이 아닌 모든 경우에 B
+//   }
+//   return answer;
+// }
+
+// 훨씬 간결해지네 !

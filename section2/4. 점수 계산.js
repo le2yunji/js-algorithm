@@ -18,20 +18,29 @@ function solution(arr) {
   let answer = 0;
   let bonus = 1;
 
-  if (arr[0] === 1) answer += bonus;
-
-  for (let i = 1; i < arr.length; i++) {
+  for (let i = 0; i < arr.length; i++) {
     if (arr[i] === 1) {
-      if (arr[i - 1] === 1) {
-        bonus++;
-      } else {
-        bonus = 1;
-      }
+      if (arr[i - 1] === 1) bonus++;
+      else bonus = 1;
       answer += bonus;
     }
   }
   return answer;
 }
 
-let arr = [1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1];
+let arr = [1, 0, 1, 1, 1, 0, 0, 1, 1, 0];
 console.log(solution(arr)); // 10
+
+// 강의 정답
+
+// function solution(arr) {
+//   let answer = 0,
+//     cnt = 0;
+//   for (let x of arr) {
+//     if (x === 1) {
+//       cnt++;
+//       answer += cnt;
+//     } else cnt = 0;
+//   }
+//   return answer;
+// }

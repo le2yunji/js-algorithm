@@ -2,11 +2,11 @@
 // (첫 번째 수는 무조건 출력한다)
 
 function solution(arr) {
-  let answer = "";
+  let answer = [];
   const N = arr.length;
   for (let x of arr) {
     if (x >= N) {
-      answer += x + " ";
+      answer.push(x);
     }
   }
   return answer;
@@ -14,3 +14,13 @@ function solution(arr) {
 
 let arr = [7, 3, 9, 5, 6, 12];
 console.log(solution(arr)); // 7 9 6 12
+
+// 강의 정답
+// function solution(arr) {
+//   let answer = [];
+//   answer.push(arr[0]);
+//   for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] > arr[i - 1]) answer.push(arr[i]);
+//   }
+//   return answer;
+// }

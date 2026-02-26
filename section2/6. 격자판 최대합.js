@@ -2,6 +2,15 @@
 
 function solution(arr) {
   let answer;
+  const N = arr.length;
+  let sum = 0;
+  let sum2 = 0;
+  for (let i = 0; i < N; i++) {
+    for (let j = 0; j < N; j++) {
+      sum += arr[j][i];
+      sum2 += arr[i][j];
+    }
+  }
   return answer;
 }
 
@@ -12,4 +21,4 @@ let arr = [
   [19, 27, 29, 37, 27],
   [19, 13, 30, 13, 19],
 ];
-console.log(solution(arr));
+console.log(solution(arr)); // 155
