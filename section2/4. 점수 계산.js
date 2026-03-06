@@ -44,3 +44,5 @@ console.log(solution(arr)); // 10
 //   }
 //   return answer;
 // }
+
+// 나는 미리 bonus 를 1로 잡고, 이전 수에서 조건을 파생시킨 반면, 강의에서는 현 시점에서 bonus를 제어함으로써 이중 조건문을 피함

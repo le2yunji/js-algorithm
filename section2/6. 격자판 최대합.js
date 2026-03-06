@@ -1,16 +1,9 @@
 // N*N의 격자판이 주어지면 각 행의 합, 각 열의 합, 두 대각선의 합 중 가 장 큰 합을 출력합니다.
 
+// 🚨 못 푼 문제
+
 function solution(arr) {
   let answer;
-  const N = arr.length;
-  let sum = 0;
-  let sum2 = 0;
-  for (let i = 0; i < N; i++) {
-    for (let j = 0; j < N; j++) {
-      sum += arr[j][i];
-      sum2 += arr[i][j];
-    }
-  }
   return answer;
 }
 
@@ -22,3 +15,26 @@ let arr = [
   [19, 13, 30, 13, 19],
 ];
 console.log(solution(arr)); // 155
+
+// 강의 자료
+function solution(arr) {
+  let answer = Number.MIN_SAFE_INTEGER;
+  const n = arr.length;
+  let sum1 = 0;
+  let sum2 = 0;
+  for (let i = 0; i < n; i++) {
+    sum1 = sum2 = 0;
+    for (let j = 0; j < n; j++) {
+      sum1 += arr[i][j];
+      sum2 += arr[i][j];
+    }
+    answer = Math.max(answer, sum1, sum2);
+  }
+  sum1 = sum2 = 0;
+  for (let i = 0; i < n; i++) {
+    sum1 += arr[i][i];
+    sum2 += arr[i][n - i - 1];
+  }
+  answer = Math.max(answer, sum1, sum2);
+  return answer;
+}

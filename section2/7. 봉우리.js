@@ -7,6 +7,10 @@
 function solution(arr) {
   let answer;
 
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr.length; j++) {}
+  }
+
   return answer;
 }
 
@@ -18,3 +22,34 @@ let arr = [
   [8, 7, 3, 5, 2],
 ];
 console.log(solution(arr));
+
+// 강의 정답
+function solution(arr) {
+  let answer;
+  let n = arr.length;
+  let dx = [-1, 0, 1, 0];
+  let dy = [0, 1, 0, -1];
+
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j < n; j++) {
+      let flag = 1;
+      for (let k = 0; k < 4; k++) {
+        let nx = i + dx[k];
+        let ny = j + dy[k];
+        if (
+          nx >= 0 &&
+          nx < n &&
+          ny >= 0 &&
+          ny < n &&
+          arr[arr[nx][ny] >= arr[i][j]]
+        ) {
+          flag = 0;
+          break;
+        }
+      }
+      if (flag) answer++;
+    }
+  }
+
+  return answer;
+}
